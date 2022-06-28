@@ -1,4 +1,4 @@
-const eqArrays = function (actual, expected) {
+const eqArrays = function(actual, expected) {
   
   let output;
 
