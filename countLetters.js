@@ -5,7 +5,7 @@ const countLetters = function(str) {
   const string = str.split(' ').join('');
   const finalString = string.toLowerCase();
 
-  for (let val of finalString) {
+  for (const val of finalString) {
     if (letters[val]) {
       letters[val] += 1;
     } else {
