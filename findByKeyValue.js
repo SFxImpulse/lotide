@@ -6,3 +6,5 @@ const findKeyByValue = function(obj, value) {
     }
   }
 };
+
+module.exports = findKeyByValue;

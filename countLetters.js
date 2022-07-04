@@ -14,3 +14,5 @@ const countLetters = function(str) {
   }
   return letters;
 };
+
+module.exports = countLetters;

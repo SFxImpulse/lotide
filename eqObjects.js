@@ -1,21 +1,3 @@
-const eqArrays = function(actual, expected) {
-  
-  let output;
-
-  if (actual.length !== expected.length) {
-    return false;
-  }
-
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] === expected[i]) {
-      output = true;
-    } else {
-      output = false;
-    }
-  }
-  return output;
-};
-
 const eqObjects = function(object1, object2) {
 
   const obj1keys = Object.keys(object1);
@@ -36,3 +18,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
