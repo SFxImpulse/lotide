@@ -1,11 +1,14 @@
 const tail = function(array) {
-  
-  let tailIndex = ''
 
-  for (let i = 1; i < array.length; i++) {
-    tailIndex = array[i]
+  if (array.length <= 1) {
+    return [];
   }
-  return tailIndex;
+
+  const tail = array.slice(1);
+
+  return tail;
 };
+
+console.log(tail([1]));
 
 module.exports = tail;
