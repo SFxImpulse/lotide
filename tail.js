@@ -1,9 +1,11 @@
 const tail = function(array) {
   
-  let newArr = [];
+  let tailIndex = ''
 
   for (let i = 1; i < array.length; i++) {
-    newArr.push(array[i]);
+    tailIndex = array[i]
   }
-  return newArr;
+  return tailIndex;
 };
+
+module.exports = tail;
